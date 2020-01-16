@@ -4,12 +4,53 @@ body {
 
 body header {
   background-color: white;
-  height: 80px;
-  border-bottom: 1px solid black;
 }
 
-body header a {
-  color: white;
-  text-transform: uppercase;
+body header .wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+body header .wrapper .nav {
+  height: 79px;
+  width: 1200px;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+body header .wrapper .nav .logo {
+  line-height: 80px;
+  width: 200px;
+  display: inline-block;
+  float: left;
+}
+
+body header .wrapper .nav .logo .logo img {
+  color: #4e3d1d;
+}
+
+body header .wrapper .nav .menu-right {
+  display: inline-block;
+  float: left;
+}
+
+body header .wrapper .nav .menu-right .menu-items a:hover {
+  color: blue;
+}
+
+body header .wrapper .nav .menu-right .menu-items a {
+  float: left;
+  color: #4e3d1d;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body header .wrapper .nav .menu-right .dropd-menu {
+  display: none;
 }
 

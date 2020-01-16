@@ -3,12 +3,61 @@ body{
 
   header{
     background-color: white;
-    height: 80px;
-    border-bottom: 1px solid black;
 
-    a{
-      color: white;
-      text-transform: uppercase;
+
+    .wrapper{
+      display: flex;
+      justify-content: center;
+
+
+        .nav{
+          height: 79px;
+          width: 1200px;
+          border-bottom: 1px solid black;
+          display: flex;
+          justify-content: space-between;
+
+
+          .logo{
+            line-height: 80px;
+            width: 200px;
+            display: inline-block;
+            float: left;
+
+            .logo img{
+              color: #4e3d1d;
+            }
+
+
+
+
+
+          }
+
+          .menu-right{
+            display: inline-block;
+            float: left;
+
+            .menu-items a:hover{
+              color: blue;
+            }
+
+             .menu-items a{
+               float: left;
+               color: #4e3d1d;
+               text-transform: capitalize;
+               text-decoration: none;
+
+
+
+
+             }
+
+             .dropd-menu{
+               display: none;
+             }
+          }
+        }
+      }
     }
   }
-}
