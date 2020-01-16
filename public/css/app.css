@@ -26,7 +26,7 @@ body header .wrapper .nav {
 body header .wrapper .nav .logo {
   line-height: 80px;
   width: 200px;
-  display: inline-block;
+  display: contents;
   float: left;
 }
 
@@ -35,7 +35,7 @@ body header .wrapper .nav .logo .logo img {
 }
 
 body header .wrapper .nav .menu-right {
-  display: inline-block;
+  display: contents;
   float: left;
 }
 

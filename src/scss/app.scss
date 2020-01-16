@@ -21,7 +21,7 @@ body{
           .logo{
             line-height: 80px;
             width: 200px;
-            display: inline-block;
+            display: contents;
             float: left;
 
             .logo img{
@@ -35,7 +35,7 @@ body{
           }
 
           .menu-right{
-            display: inline-block;
+            display: contents;
             float: left;
 
             .menu-items a:hover{

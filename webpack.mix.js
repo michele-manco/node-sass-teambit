@@ -11,8 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('src/scss/app.scss', 'public/css');
-
+mix.sass('src/scss/app.scss', 'public/css').js('src/js/app.js', 'public/js/')
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
