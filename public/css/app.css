@@ -1,19 +1,26 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+* body {
   background-color: white;
 }
 
-body header {
+* body header {
   background-color: white;
 }
 
-body header .wrapper {
+* body header .wrapper {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
 }
 
-body header .wrapper .nav {
+* body header .wrapper .nav {
   height: 79px;
   width: 1200px;
   border-bottom: 1px solid black;
@@ -23,34 +30,66 @@ body header .wrapper .nav {
           justify-content: space-between;
 }
 
-body header .wrapper .nav .logo {
+* body header .wrapper .nav .logo {
   line-height: 80px;
-  width: 200px;
   display: contents;
   float: left;
 }
 
-body header .wrapper .nav .logo .logo img {
+* body header .wrapper .nav .logo .logo img {
   color: #4e3d1d;
 }
 
-body header .wrapper .nav .menu-right {
-  display: contents;
+* body header .wrapper .nav .menu-right {
+  display: block;
   float: left;
 }
 
-body header .wrapper .nav .menu-right .menu-items a:hover {
+* body header .wrapper .nav .menu-right .menu-items {
+  width: 400px;
+  position: relative;
+  height: 80px;
+  float: left;
+  display: contents;
+}
+
+* body header .wrapper .nav .menu-right .menu-items a:hover {
   color: blue;
 }
 
-body header .wrapper .nav .menu-right .menu-items a {
-  float: left;
+* body header .wrapper .nav .menu-right .menu-items a {
   color: #4e3d1d;
   text-transform: capitalize;
   text-decoration: none;
+  line-height: 80px;
+  margin-right: 40px;
+  font-size: 14px;
 }
 
-body header .wrapper .nav .menu-right .dropd-menu {
+* body header .wrapper .nav .menu-right .menu-items .dropd-menu {
   display: none;
+  position: absolute;
+  width: 80px;
+  text-align: center;
+}
+
+* body main .jumbo .container::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+* body main .jumbo .container {
+  width: 1200px;
+  height: 6120px;
+}
+
+* body main .jumbo .container .title h1 {
+  color: #4e3d1d;
+  padding: 55px;
+  margin-left: 50px;
+  font-size: 55px;
+  margin-right: 457px;
+  font-weight: 500;
 }
 

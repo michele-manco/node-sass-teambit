@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+
 body{
   background-color: white;
 
@@ -20,7 +27,6 @@ body{
 
           .logo{
             line-height: 80px;
-            width: 200px;
             display: contents;
             float: left;
 
@@ -35,18 +41,30 @@ body{
           }
 
           .menu-right{
-            display: contents;
+            display: block;
             float: left;
 
-            .menu-items a:hover{
+            .menu-items{
+              width: 400px;
+              position: relative;
+              height: 80px;
+              float: left;
+              display: contents;
+
+
+             a:hover{
               color: blue;
             }
 
-             .menu-items a{
-               float: left;
+             a{
+               // float: left;
                color: #4e3d1d;
                text-transform: capitalize;
                text-decoration: none;
+               line-height: 80px;
+               margin-right: 40px;
+               font-size: 14px;
+
 
 
 
@@ -54,10 +72,48 @@ body{
              }
 
              .dropd-menu{
-               display: none;
+                display: none;
+                position: absolute;
+                width: 80px;
+                text-align: center;
+
              }
+
+            }
           }
         }
       }
     }
+
+  main{
+
+    .jumbo{
+
+      .container::after{
+        clear: both;
+    display: block;
+    content: "";
+      }
+      .container{
+        width: 1200px;
+        height: 6120px;
+
+
+        .title{
+
+          h1{
+            color:#4e3d1d;
+            padding: 55px;
+            margin-left: 50px;
+            font-size: 55px;
+            margin-right: 457px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
   }
+
+  }
+}
